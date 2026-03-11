@@ -1,0 +1,6 @@
+@Mission10_Wong_HostAddress = http://localhost:5008
+
+GET {{Mission10_Wong_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
