@@ -4,7 +4,7 @@ function BowlerTable() {
   const [bowlers, setBowlers] = useState([]);
 
 useEffect(() => {
-  fetch("/api/Bowling")
+  fetch("http://localhost:5008/api/Bowling")
     .then((res) => res.json())
     .then((data) => setBowlers(data));
 }, []);
