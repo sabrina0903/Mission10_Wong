@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 function BowlerTable() {
   const [bowlers, setBowlers] = useState([]);
 
-  useEffect(() => {
-    fetch("https://localhost:44325/api/Bowling")
-      .then((response) => response.json())
-      .then((data) => setBowlers(data));
-  }, []);
+useEffect(() => {
+  fetch("/api/Bowling")
+    .then((res) => res.json())
+    .then((data) => setBowlers(data));
+}, []);
+
 
   return (
     <table>
